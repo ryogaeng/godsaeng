@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "177756241327",
+    "firebase_url": "https://godsaengandroid-default-rtdb.firebaseio.com",
+    "project_id": "godsaengandroid",
+    "storage_bucket": "godsaengandroid.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:177756241327:android:c2a9ebe6aae1c369a7435a",
+        "android_client_info": {
+          "package_name": "com.godsaeng.godsaengfinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "177756241327-si1fo209b80n99q6ar5ecn1h25ktqbsh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.godsaeng.godsaengfinal",
+            "certificate_hash": "fe04c78ec85e18df9589a6ca839db591325276e0"
+          }
+        },
+        {
+          "client_id": "177756241327-8njrnsneasj7li7vva5ejcn30q5kidvf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAs4vYMGULnqrHJcxmu4bbvxmOspWLgBJQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "177756241327-8njrnsneasj7li7vva5ejcn30q5kidvf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

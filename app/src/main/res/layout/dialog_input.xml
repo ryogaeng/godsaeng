@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingTop="24dp"
+    android:paddingBottom="24dp">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edit_text1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end|center_vertical"
+            android:layout_marginEnd="16dp"
+            android:maxLines="1"
+            android:inputType="number"
+            android:padding="8dp"
+            android:background="@drawable/shape_rect_green"
+            android:textColor="@color/black"
+            android:textColorHint="#8abe6e"
+            android:textStyle="bold"
+            android:hint="00000"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/label1"
+            style="@style/TextThird"
+            android:layout_width="wrap_content"
+            android:text="원"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edit_text2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end|center_vertical"
+            android:layout_marginEnd="16dp"
+            android:maxLines="1"
+            android:inputType="number"
+            android:padding="8dp"
+            android:background="@drawable/shape_rect_green"
+            android:textColor="@color/black"
+            android:textColorHint="#8abe6e"
+            android:textStyle="bold"
+            android:hint="00000"
+            android:textSize="16dp"/>
+
+        <TextView
+            style="@style/TextThird"
+            android:layout_width="wrap_content"
+            android:text="개비"/>
+    </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/button"
+        android:layout_width="55dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        android:background="#B7EB8F"
+        android:gravity="center"
+        android:text="확인"
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/linear"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

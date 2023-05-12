@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.DailyGoalFragment">
+
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="25dp"
+        android:src="@mipmap/image_logo_small"
+        app:layout_constraintWidth_percent="0.7"
+        app:layout_constraintDimensionRatio="237:50"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/image_timer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@mipmap/image_timer"
+        app:layout_constraintWidth_percent="0.6"
+        app:layout_constraintDimensionRatio="220:251"
+        app:layout_constraintTop_toBottomOf="@+id/image_logo"
+        app:layout_constraintBottom_toTopOf="@+id/image_pause"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/text_time"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_horizontal|bottom"
+        android:text=""
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        app:layout_constraintDimensionRatio="2:1"
+        app:layout_constraintStart_toStartOf="@id/image_timer"
+        app:layout_constraintEnd_toEndOf="@+id/image_timer"
+        app:layout_constraintBottom_toTopOf="@id/text_percent"
+        />
+
+    <TextView
+        android:id="@+id/text_percent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingTop="10dp"
+        android:gravity="center_horizontal|top"
+        android:text=""
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="32dp"
+        app:layout_constraintDimensionRatio="2:1"
+        app:layout_constraintStart_toStartOf="@id/image_timer"
+        app:layout_constraintEnd_toEndOf="@+id/image_timer"
+        app:layout_constraintBottom_toBottomOf="@id/image_timer"/>
+
+    <ImageView
+        android:id="@+id/image_pause"
+        android:layout_width="125dp"
+        android:layout_height="0dp"
+        android:src="@mipmap/image_button_pause"
+        app:layout_constraintWidth_percent="0.6"
+        app:layout_constraintDimensionRatio="124:108"
+        app:layout_constraintTop_toBottomOf="@+id/image_timer"
+        app:layout_constraintBottom_toTopOf="@+id/button_add"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/image_restart"/>
+
+    <ImageView
+        android:id="@+id/image_restart"
+        android:layout_width="125dp"
+        android:layout_height="0dp"
+        android:src="@mipmap/image_button_restart"
+        app:layout_constraintWidth_percent="0.6"
+        app:layout_constraintDimensionRatio="124:108"
+        app:layout_constraintTop_toBottomOf="@+id/image_timer"
+        app:layout_constraintBottom_toTopOf="@+id/button_add"
+        app:layout_constraintStart_toEndOf="@+id/image_pause"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/button_add"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/shape_circle"
+        app:srcCompat="@drawable/ic_add"
+        app:layout_constraintTop_toBottomOf="@+id/image_restart"
+        app:layout_constraintBottom_toTopOf="@+id/linear"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@mipmap/image_round_rect"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/button_add"
+        app:layout_constraintBottom_toTopOf="@+id/menu_layout">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="현재 진행 목표"
+            android:textColor="@color/black"
+            android:textSize="21dp"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="1.2dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="7dp"
+            android:background="@color/black"/>
+        <TextView
+            android:id="@+id/text_goal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="21dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <include android:id="@+id/menu_layout"
+        layout="@layout/layout_menu"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_login">
+
+    <fragment
+        android:id="@+id/navigation_login"
+        android:name="com.godsaeng.godsaengfinal.ui.fragments.LoginFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_login" />
+
+    <fragment
+        android:id="@+id/navigation_sign_up"
+        android:name="com.godsaeng.godsaengfinal.ui.fragments.SingUpFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_sign_up" />
+
+    <fragment
+        android:id="@+id/navigation_god_goal"
+        android:name="com.godsaeng.godsaengfinal.ui.fragments.GodGoalFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_god_goal" />
+
+    <fragment
+        android:id="@+id/navigation_daily_goal"
+        android:name="com.godsaeng.godsaengfinal.ui.fragments.DailyGoalFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_god_goal" />
+
+    <fragment
+        android:id="@+id/navigation_first"
+        android:name="com.godsaeng.godsaengfinal.ui.fragments.FirstFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_first" />
+
+    <fragment
+        android:id="@+id/navigation_second"
+        android:name="com.godsaeng.godsaengfinal.ui.fragments.SecondFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_second" />
+
+    <fragment
+        android:id="@+id/navigation_third"
+        android:name="com.godsaeng.godsaengfinal.ui.fragments.ThirdFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_third" />
+
+    <fragment
+        android:id="@+id/navigation_fourth"
+        android:name="com.godsaeng.godsaengfinal.ui.fragments.FourthFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_fourth" />
+
+    <fragment
+        android:id="@+id/navigation_schedule"
+        android:name="com.godsaeng.godsaengfinal.ui.fragments.ScheduleFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_schedule" />
+
+    <fragment
+        android:id="@+id/navigation_add_daily"
+        android:name="com.godsaeng.godsaengfinal.ui.fragments.AddDailyGoalFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_add_daily_goal" />
+</navigation>
